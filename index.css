@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('./fonts/TTLakes-Regular.eot');
+  src: url('./fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/TTLakes-Regular.woff') format('woff'),
+  url('./fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('./fonts/TTLakes-Medium.eot');
+  src: url('./fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/TTLakes-Medium.woff') format('woff'),
+  url('./fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('./fonts/TTLakes-Bold.eot');
+  src: url('./fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/TTLakes-Bold.woff') format('woff'),
+  url('./fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: 'TT Lakes';
+  font-weight: normal;
+}
+
+body{
+  width: 1120px;
+  margin:0 auto;
+  color: #7E7E82;
+}
+
+@media(max-width: 1120px){
+  body{
+    width: 768px;
+  }
+}
+
+@media(max-width: 768px){
+  body{
+    width: 320px;
+  }
+}
+
+.article_header{
+  background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+  margin: 0;
+  padding: 16px 32px;
+  border-top: 1px solid #D9FFF5;
+}
+
+@media(max-width: 768px){
+  .article_header{
+    padding: 16px;
+  }
+}
+
+.article_main{
+  background-color: #F8F8F8;
+  padding: 16px 32px;
+}
+
+@media(max-width: 768px){
+  .article_main{
+    padding: 0;
+  }
+}
+
+.swiper {
+  display: none;
+  padding: 16px;
+  padding-bottom: 32px;
+}
+
+@media(max-width: 768px){
+  .swiper{
+    display: flex;
+  }
+}
+
+.brands_repair__list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 32px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 1120px){
+  .brands_repair__list{
+    gap: 16px;
+  }
+}
+
+@media(max-width: 768px){
+  .brands_repair__list{
+    display: none;
+  }
+}
+  
+.brands_repair__card{
+  align-items: center;
+  height: 72px;
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  background-color: white;
+  padding: 16px;
+}
+
+@media(max-width: 1120px){
+  .brands_repair__card{
+    width: 224px;
+  }
+}
+
+.round_button{
+  padding: 0;
+  border: none;
+  background: none;
+  width: 3em;
+  height: 3em;
+  transition: 0.5s;
+}
+
+.round_button:hover{
+  transform: scale(1.15);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.round_button--go{
+  background: url("./image/go.svg") center no-repeat;
+}
+
+.more_info__button{
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background-color: rgba(255, 0, 0, 0);
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+@media(max-width: 768px){
+  .more_info__button{
+    display: none;
+  }
+}
+
+.more_info__button:hover{
+  color: #7E7E82;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.more_info__button::before{
+  content: url("./image/expand.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.more_info__button.active::before{
+  content: url("./image/expand.svg");
+  width: 24px;
+  height: 24px;
+  transform: rotate(180deg);
+}
+
